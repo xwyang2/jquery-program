@@ -1,0 +1,132 @@
+@charset "utf-8";
+@import"basic";
+$basic_border:1px solid #666;
+#cart{
+	background: #fff;
+	.cart_site{
+		p{
+			line-height: 60px;
+			text-indent: 10px;
+		}
+		.flow{
+			padding: 10px;
+			display: flex;
+			justify-content: space-between;			
+			li{
+				width: 170px;
+				height: 40px;
+				@include rounded-corners(5px)
+				text-align: center;
+				color: #ff4e4e;
+				line-height: 40px;
+				background: #f4f4f4;
+				border: $basic_border;
+				position: relative;
+				i{
+					display: block;					
+					width:16px;
+					height:16px;
+					position: absolute;
+					background: url(../images/cart_bg0.jpg) center;
+					right: -22px;
+					top:12px;
+				}				
+			}
+		}
+	}
+	.mycart{
+		border:$basic_border;padding: 0 15px;border-top: 10px solid #f9f9f9;padding-bottom: 20px;
+		.mycart_top{
+			height: 50px;
+			.mycart_top_left{
+				padding-left: 45px;background: url(../images/cart_bg1.jpg) no-repeat left center;
+				span{
+					display: block;
+					font:14px/24px "";
+				}
+				em{
+					display: block;
+					font:20px/26px "";
+				}
+			}
+			.mycart_top_right{
+				height: 24px;
+				line-height: 24px;
+				margin-top: 13px;
+				text-align: center;
+				overflow: hidden;
+				li{
+					float: left;
+					width:140px;
+					height: 24px;
+					background: #afafaf;
+				}
+				li:nth-child(1){
+					background:#a6cd3e url(../images/cart_bg2.jpg) no-repeat right center;
+				}
+				li:nth-child(2){
+					background: #afafaf url(../images/cart_bg3.jpg) no-repeat right -1px;
+				}
+			}
+		}
+		.cart_center{
+			border:$basic_border;
+			text-align: center;line-height: 30px;
+			thead{
+				background: #fff4e5;
+				height: 30px;								
+				th{
+					border-left: $basic_border;
+					border-bottom: $basic_border;
+					width: 100px;padding:0 5px;
+				}
+				th:first-child{
+					border-left: none;
+				}				
+			}
+			tbody{
+			    tr{
+			       border-bottom: $basic_border;
+			       td{
+			          border-left: $basic_border; 
+			       }
+			       td:first-child{
+			           border-left: none;
+			           img{
+			               width: 60px;
+			               height: 60px;
+			               margin: 3px 0;
+			           }
+			       }
+			       td:nth-child(2){
+			           line-height: 16px;
+			           text-align: left;
+			           padding:0 5px;
+			       }
+			       td:nth-child(4){
+			          em{
+			              width:30px;
+			              height: 20px;
+			              line-height: 20px;
+			              display: inline-block;
+			              background:#a6cd3e;
+			              @include rounded-corners(5px);
+			              margin: 0 3px;
+			          } 
+			       }
+			       td:nth-child(6) {
+			           span{
+			               display: inline-block;
+			               width:80px;
+			               height: 30px;
+			               margin-top: 10px;
+			               line-height: 30px;
+			               background: #ccc;
+			               @include rounded-corners(5px)
+			           }
+			       }
+			    }
+			}
+		}
+	}
+}

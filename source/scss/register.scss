@@ -1,0 +1,90 @@
+@charset "utf-8";
+@import"basic";
+$basic_border:1px solid #666;
+#register{
+	margin-bottom: 20px;background: #f7f7f7;
+	.register_site{
+		line-height: 50px;
+		span{
+			a{
+				color:#00f;
+			}
+		}
+	}
+	.info{
+		border: $basic_border;background: #fff;padding-bottom: 34px;
+	}
+	p{
+		width: 780px;margin:20px auto 0;line-height: 32px;
+		input{
+		    box-sizing: border-box;padding:0 3px;
+		}
+		input.success{
+		    border:2px solid #080;
+		}
+		input.error{
+		    border:2px solid #f00;
+		}
+		span.msg{margin-left: 10px;}
+	}
+	p.info0{
+		margin: 30px auto 10px;line-height: 34px;font-size: 18px;color:#fff;font-weight: 700;
+		span:nth-child(1){
+			display: inline-block;width:52%;text-align: center;background: #ffa73d url(../images/register_bg.jpg) no-repeat right -1px;
+		}
+		span:nth-child(2){
+			display: inline-block;width:48%;text-align: center;background: #d8d8d8;
+		}
+	}
+	p.info1{
+		overflow: hidden;
+		label{
+			float: left;width:100px;height: 32px;text-align: right;
+		}
+		input{
+			float: left;width:300px;height: 32px;
+		}
+	}
+	p.info2{
+	    width: 400px;padding-right: 380px;
+		text-align: right;
+		span{
+			display: inline-block;width:45px;height: 20px;border-bottom:2px solid #ccc ;line-height: 20px;text-align: center;
+		}
+		span.active{border-bottom:2px solid #f00 ;}
+	}
+	p.info3{
+		overflow: hidden;
+		label{
+			float: left;width:100px;height: 32px;text-align: right;
+		}
+		input{
+			float: left;width:104px;height: 32px;
+		}
+		em{
+			float: left;width:68px;height: 32px;border: 1px solid #ccc;margin: 0 10px;text-align: center;
+		}
+		a{
+			color:#00f;
+		}		
+	}
+	p.info4{
+		label{
+			display:inline-block;vertical-align: middle;margin-left: 100px;
+			input{			    
+			    vertical-align: middle;
+			}
+			span{
+			    vertical-align: middle;
+			}
+		}
+		a{
+			display:inline-block;color:#00f;vertical-align: middle;
+		}
+	}
+	p.info5{
+		.regIn{
+			display: block;margin-left: 100px;width:300px;height:50px;line-height: 50px;font-size: 20px;color: #fff;font-weight: 700;background: #e61952;border: none;text-align: center;
+		}
+	}
+}

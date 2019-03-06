@@ -1,0 +1,12 @@
+
+//跨浏览器的圆角边框
+@mixin rounded-corners ($basic...){
+   -moz-border-radius: $basic;
+   -webkit-border-radius: $basic;
+   border-radius: $basic;
+}
+//跨浏览器的透明度
+@mixin opacity($opacity) {
+   opacity: $opacity / 100;
+   filter: alpha(opacity=$opacity);
+}

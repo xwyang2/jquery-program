@@ -1,0 +1,9 @@
+requirejs.config({
+	baseUrl:"js/",
+	paths:{
+		"common":"common",
+		"basic":"basic",
+		"jquery":"lips/jquery.min",
+		"cookie":"lips/jquery.cookie.min"
+	}
+})

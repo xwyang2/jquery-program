@@ -1,0 +1,2 @@
+1，依赖于gulp server环境，dist目录为gulp server的根目录
+2，gulp的配置信息 ==> package.json  启动文件 ==> gulpfile.js

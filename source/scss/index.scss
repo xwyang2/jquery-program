@@ -1,0 +1,340 @@
+@charset "utf-8";
+@import"basic";
+$basic_border:1px solid #666;
+$basic_border0:1px solid #ccc;
+
+.recommend{
+   width:110px;border:10px solid #f00;border-image:url(../images/border-img.jpg) 30 repeat;
+   position: fixed;left:0;bottom: 0;z-index: 10;
+   h3{
+       font:900 20px/40px "";
+       height: 40px;
+       text-align: center;
+       background: #d70100;
+       color:#fff;
+   }
+   .re_btn{
+       width: 22px;
+       height: 22px;
+       background: url(../images/sign_bg.jpg) center;
+       position: absolute;
+       top:-10px;
+       right: -32px;
+   }
+   .relist{
+       background: #fff;
+       li{
+           padding: 5px;
+           a{
+               display: block;
+               width: 100px;height: 80px;
+               img{
+                   width:100px;
+                   height: 80px;
+               }
+           }
+           span{
+               height: 16px;
+               display: block;
+               line-height: 16px;
+               padding:0 5px;
+               overflow: hidden;
+           }
+       }
+   }
+}
+main{
+	padding-top: 10px;
+	.sidebar{
+		width:202px;
+		.classify{
+			border:$basic_border0;@include rounded-corners(4px 4px 0 0);
+			h3{
+				padding-left:26px ;background: #f5f5f5 url(../images/sidebar_bg1.jpg) no-repeat  5px center;
+			}
+			.juck_classify{
+				li{
+					text-indent: 36px;line-height: 28px;position:relative;border-bottom: $basic_border0;background: url(../images/sidebar_bg2.jpg) no-repeat  180px center;
+					.sublist{
+					    position: absolute;
+					    display: none;
+					    width: 250px;
+					    height: 63px;
+					    padding: 5px;
+					    border: 2px solid #fa8b02;
+					    background: #e7cecd;
+					    top:15px;
+					    left:150px;
+					    overflow: hidden;
+					    z-index: 2;
+					    li{
+					        width:120px;
+					        margin-right: 5px;
+					        height: 20px;
+					        line-height: 20px;
+					        float: left;
+					        text-indent: 5px;
+					        border-bottom: 1px solid #fff;
+					    }
+					}
+				}
+				li.over{
+				    background: #e7cecd;
+				    color: #f00;
+				    ul.sublist{
+				        display: block;
+				    }
+				}
+			}
+		}
+		.rank,.company,.weixin{
+			margin-top: 10px;border:$basic_border0;@include rounded-corners(4px 4px 0 0);
+		}
+		.rank{
+		    .junk_rank{
+		        li{
+		            height: 30px;
+		            border-top:$basic_border0 ;
+		            background: #fbfbfb;
+		            overflow: hidden;		            
+		            span{
+		                display: block;
+		                height: 30px;
+		                padding-right: 5px;
+		                line-height: 30px;
+		                text-indent: 10px;
+		                i{
+		                    text-indent: 5px;
+		                }
+		            }
+		            i{
+		                display: inline-block;
+                        width: 20px;
+                        height: 20px;
+                        background: #fa9202;
+                        font-weight: 800;
+                        line-height: 20px;
+                        text-align: center;
+                        margin-right:5px ;
+                        color: #fff;  
+		            }
+		            div{
+		                padding: 10px 15px;
+		                text-align: center;
+		                background: #fff;
+		                a{
+		                    display: block;
+		                    border: $basic_border0;
+		                    width:160px ;
+		                    height: 158px;
+		                    padding: 5px;
+		                    position: relative;
+		                    img{
+		                        width:160px;
+		                        height:158px;
+		                    }
+		                    i{
+		                        position: absolute;
+		                        left:0;
+		                        top:0;
+		                    }
+		                }
+		                p,em{
+		                    height:20px;
+		                    line-height: 20px;
+		                }
+		                em{
+		                    display: block;
+		                    color: red;
+		                }
+		            }
+		        }
+		        li.select{
+		            height: 258px;
+		        }
+		    }
+		}
+		.company{
+			.ourcompany{
+				overflow: hidden;
+				li{
+					float:left;margin:10px;width:80px;height:40px;box-sizing: border-box;border: 1px solid #999;
+					img{
+						width:78px;height:38px;
+					}
+				}
+			}
+		}
+		.weixin{
+			img{
+				display: block;margin: 14px auto;
+			}
+		}
+	}
+	h3{
+		font-size:12px ;line-height: 30px;font-weight: 700;text-indent: 12px;@include rounded-corners(4px 4px 0 0);background-color: #f5f5f5;		
+	}
+	.main{
+		width:770px;
+		.main_top{
+			.banner{
+				width: 520px;height:270px;background: #ccc;position: relative;overflow: hidden;border: $basic_border;box-sizing: border-box;
+				.imgBox{
+				    width: 2600px;
+				    height: 270px;
+				    position: absolute;
+				    left:0;
+				    top:0;
+				    a{
+				        float: left;
+				        img{
+				            width: 520px;
+				            height: 270px;
+				        }
+				    }
+				}
+				.banner_btn{
+				    position: absolute;
+				    width:140px;
+				    height: 20px;
+				    left:0;
+				    right: 0;
+				    bottom: 20px;
+				    margin: auto;
+				    li{
+				        width: 20px;
+				        height: 20px;
+				        cursor: pointer;
+				        background: #e7cecd;
+				        text-align: center;
+				        font-weight: 800;
+				        line-height: 20px;
+				        float: left;
+				        margin-left: 15px;
+				        color: #f00;
+				        @include rounded-corners(10px);
+				    }
+				}
+				span{
+				    display: none;
+				    width: 24px;
+                    height: 60px;
+                    background: #e7cecd;
+                    text-align: center;
+                    font-size: 24px;
+                    font-weight: 800;
+                    line-height: 60px;
+                    position: absolute;    
+                    top:0;
+                    bottom: 0;
+                    margin: auto;  
+                    color: #f00;
+                    cursor: pointer;
+                    @include  opacity(50)
+				}
+				span.banner_left{
+				    left:5px;				    
+				}
+				span.banner_right{
+				    right:5px;
+				}
+			}
+			.account{
+				width: 242px;
+				.login,.ad{
+					@include rounded-corners(4px 4px 0 0);border: $basic_border0;
+				}
+				.login{
+					p{
+						margin:5px auto;
+						input{
+						    box-sizing: border-box;
+						}
+					}
+					p.login0{
+						padding-left: 10px;
+						input{
+							width: 164px;height: 20px;
+						}
+					}
+					p.login1{
+						padding-left: 22px;
+						input{
+							width: 164px;height:20px;
+						}
+					}
+					.login2{
+						padding-left: 32px;
+						a{
+							display: inline-block;color: #000;margin:0 5px;
+						}
+						#sub{
+							display: inline-block;@include rounded-corners(4px);width:46px;background:#ccc;text-align: center;height: 20px;line-height: 20px;
+						}
+					}					
+				}
+			}
+			.ad{
+				margin-top: 10px;
+				h3{
+					a{
+						margin-right: 10px;color:#666;
+					}
+				}
+				p{
+					line-height: 20px;padding-left: 10px;margin-bottom: 8px;
+					a{
+						color:#000;margin-right: 30px;
+					}
+				}
+			}
+		}
+		.main_bottom{
+			margin-top: 10px;@include rounded-corners(4px 4px 0 0);border: $basic_border0;
+			h3{
+				span{
+					width: 135px;margin-top:5px;margin-left: 5px;text-indent: 43px;line-height: 25px;@include rounded-corners(4px 4px 0 0);color: #fff;background: #f3822d url(../images/main_bg1.jpg) no-repeat 10px center;
+				}
+				em{
+					margin-right: 10px;line-height: 24px;margin-top: 3px;background: #f3822d;@include rounded-corners(4px);padding-right: 12px;cursor: pointer;
+				}
+			}
+			.goodslist{
+				display: flex;justify-content: space-between;flex-wrap: wrap;padding: 0 15px;overflow: auto;
+				li{
+					width:170px;margin:10px 0;line-height:16px;text-align:center;	
+					a{
+						display: block;padding: 5px;@include rounded-corners(4px);border: $basic_border;width:158px;height: 165px;
+						img{
+							display: block;width: 100%;height: 100%;
+						}
+						&:hover{
+						    border-color:#f00 ;
+						}
+					}
+					.description{
+						height:32px;
+						padding-right: 5px;
+						overflow: hidden;
+					}
+					.price{
+						color: red;
+					}
+					span{
+						display: block;
+						width:100px;
+						margin:0 auto;
+						text-align: center;
+						@include rounded-corners(6px);
+					    line-height: 24px;
+						background: #ccc;
+						cursor: pointer;
+						&:hover{
+						    background: #f3822d;
+						}
+					}
+				}
+			}
+		}
+	}
+}
